@@ -1,0 +1,19 @@
+{
+  "name": "supplychain",
+  "version": "1.0.0",
+  "description": "ChainTrace Supply Chain Smart Contract for Hyperledger Fabric",
+  "main": "index.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "fabric-chaincode-node server --chaincode-address=$CHAINCODE_SERVER_ADDRESS --chaincode-id=$CHAINCODE_ID",
+    "start:server-nontls": "fabric-chaincode-node server --chaincode-address=$CHAINCODE_SERVER_ADDRESS --chaincode-id=$CHAINCODE_ID"
+  },
+  "dependencies": {
+    "fabric-contract-api": "^2.5.4",
+    "fabric-shim": "^2.5.4"
+  },
+  "author": "ChainTrace Team",
+  "license": "Apache-2.0"
+}
